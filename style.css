@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Staatliches', cursive;
+}
+section {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#interface {
+    background-color: cadetblue;
+    border: 1px solid royalblue;
+    border-radius: 50px;
+    width: 50vw;
+    height: 70vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+#infoup {
+    height: 20%;
+    flex-basis: 100%;
+    background-color: cadetblue;
+}
+#display {
+    height: 20%;
+    flex-basis: 100%;
+    background-color: cadetblue;
+}
+#infodown {
+    height: 60%;
+    flex-basis: 100%;
+    background-color: cadetblue;
+}
+.main {
+    background-color: transparent;
+    color: lightgray;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px;
+    font-size: 30px;
+}
+.input {
+    position: relative;
+    font-size: 5vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#infodown p {
+    background-color: transparent;
+    font-size: 45px;
+    color: lightgray;
+    text-align: center;
+}
+#infodown :first-child {
+    padding-top: 20px;
+}
+.passwordInfo {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: black;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+.unhide {
+    opacity: 1;
+}
+.gene {
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+}
+@media (max-width: 400px) {
+    .input {
+        font-size: 3vh;
+    }
+    #infodown p {
+        font-size: 20px;
+    }
+    .gene {
+        font-size: 15px;
+    }
+    .passwordInfo {
+        font-size: 15px;
+    }
+    .main {
+        font-size: 15px;
+    }
+}
