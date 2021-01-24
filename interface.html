@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<section>
+    <div id="interface">
+        <div id="infoup">
+            <p class="main">Password Checker</p>
+            <p class="passwordInfo"></p>
+        </div>
+        <div id="display">
+            <input placeholder="Write Password" class="input">
+        </div>
+        <div class="w3-light-grey container">
+            <div class="w3-container w3-center bar">0%</div>
+        </div> 
+        <div id="infodown">
+            <p class="info">
+                Great Password Have; <br />
+                    * length - 10 <br />
+                    * 1 big letter <br />
+                    * 1 number <br />
+                    * 1 special 
+            </p>
+            <button class="gene">Generate Random Great Password</button>
+        </div>
+    </div>
+</section>
+<script src="checker.js"></script>
+<script src="generator.js"></script>
+</body>
+</html>
